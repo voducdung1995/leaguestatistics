@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends Account Tracker</title>
+    <script src="index.js"> </script>
+    <script src="matchhistory.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="league-container">
+
+        <div class="league-input">
+            <input id="inputfield" class="" type="text" placeholder="Summoners Name">
+
+            <button type="button" onclick="getSummonersName()" class="">OK</button>
+
+
+
+        </div>
+
+        <div class="league-notfound">
+
+            <div id="notfound-text"> Found / Not Found</div>
+
+        </div>
+
+        <div class="league-accountinfo">
+
+            <h3>Name: <span id="account-name">--</span></h3>
+
+            <h3>ID: <span id="account-id">--</span></h3>
+
+            <h3>AccountID: <span id="account-accountid">--</span></h3>
+
+            <h3>PUUID: <span id="account-puuid">--</span></h3>
+
+
+        </div>
+
+        <div class="league-ranked">
+
+            <div id="ranked-icon">
+
+
+
+
+            </div>
+
+            <h3>Rank <span id="rank-span">--</span></h3>
+
+            <h3>Tier <span id="tier-span">--</span></h3>
+
+            <h3>Winrate <span id="winrate-span">--</span></h3>
+
+        </div>
+
+        <div class="league-matchlist" id="league-matchlist-id">
+
+            <div class="league-matchlist-container">
+
+                <h1> Matchlist</h1>
+
+                <button onclick="getAMatchHistory()">Test</button>
+
+            </div>
+           
+
+
+            <div class="match-container">
+
+                <div id="championsid">
+                    69
+                </div>
+
+                <div id="killdeathassist">
+
+                    <span id="kda-kill">0</span> /
+                    <span id="kda-death">0</span> /
+                    <span id="kda-assist">0</span>
+
+                </div>
+
+                <div id="win-lose">
+                    Win
+
+                </div>
+
+            </div>
+
+
+
+
+            
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
